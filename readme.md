@@ -25,4 +25,4 @@ script/bootstrap
 Percentile = e.WorsePPP / (e.WorsePPP + e.BetterPPP) * 100
 ```
 
-* The defensive Handoff dataset is incorrect.  Note the results where `PlayerIDSID` is a team abbreviation and `FGA` is a players last name.
+* The defensive [Handoff dataset](http://stats-prod.nba.com/wp-json/statscms/v1/synergy/player/?category=Handoff&limit=500&name=defensive&q=2474171&season=2016&seasonType=Reg) is incorrect.  Note the results where `PlayerIDSID` is a team abbreviation and `FGA` is a players last name.
