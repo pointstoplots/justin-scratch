@@ -1,0 +1,14 @@
+{
+  "name": "justin-scratch",
+  "version": "0.0.1",
+  "description": "scratch project",
+  "main": "index.js",
+  "scripts": {
+    "update-data": ""
+  },
+  "author": "Justin Palmer",
+  "license": "ISC",
+  "dependencies": {
+
+  }
+}

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+out_folder="data/raw"
+categories="Isolation PRBallHandler PRRollman Postup Spotup OffScreen"
+
+mkdir -p "$out_folder"
+
+for category in $categories; do
+  echo "Fetching $category"
+  nba-stats player-playtype-stats --category $category --name defensive --add-csv-params category name --to-csv > "$out_folder/$(echo $category | tr '[:upper:]' '[:lower:]').csv"
+done
+
+ nba-stats combine-csv $(find "`pwd`/data/raw" -name "*.csv") > data/defense.csv
+
+rm -rf "$out_folder"
+
+echo "Combined defensive data generated in data/defense.csv"

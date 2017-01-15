@@ -1,0 +1,5 @@
+#!/bin/bash
+
+npm install
+rm -rf "./data"
+./script/update-data
